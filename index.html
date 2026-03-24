@@ -79,16 +79,19 @@
             <h3>Footer</h3>
             <strong>© Tricky Troll Tavern</strong><br />
             <em>All rights guarded by a rather suspicious troll 🧌</em><br />
-            <!-- <audio controls>
+
+            <audio id="player" hidden loop>
                 <source
                     src="./src/domartistudios-magical-wizard-school-orchestral-fantasy-488126.mp3"
+                    type="audio/mp3"
                 />
-            </audio> -->
-            <audio
-                loop
-                autoplay
-                src="./src/domartistudios-magical-wizard-school-orchestral-fantasy-488126.mp3"
-            ></audio>
+            </audio>
+            <script>
+                function musicPlay() {
+                    document.getElementById("player").play();
+                }
+                musicPlay();
+            </script>
         </footer>
     </body>
 </html>
