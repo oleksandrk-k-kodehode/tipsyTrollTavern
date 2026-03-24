@@ -1,6 +1,40 @@
+:root {
+    --bg-dark: #08111a;
+    --panel: rgba(22, 18, 14, 0.72);
+    --panel-soft: rgba(25, 50, 55, 0.45);
+    --gold: #d89b3c;
+    --orange: #ffb14a;
+    --cyan: #8fd6dc;
+    --text: #f3eadb;
+    --muted: #c9bda9;
+}
+
 body {
-  display: flex;
-  flex-direction: column;
-  align-content: center;
-  justify-content: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: larger;
+    color: var(--text);
+}
+
+nav {
+    width: 50%;
+}
+
+ul {
+    padding: 0%;
+    margin: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100%;
+    list-style: none;
+}
+
+h1,
+h2,
+h3 {
+    color: #f6d28b;
+    text-shadow: 0 0 12px rgba(255, 177, 74, 0.15);
 }
