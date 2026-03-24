@@ -1,12 +1,5 @@
 :root {
-    --bg-dark: #08111a;
-    --panel: rgba(22, 18, 14, 0.72);
-    --panel-soft: rgba(25, 50, 55, 0.45);
-    --gold: #d89b3c;
-    --orange: #ffb14a;
-    --cyan: #8fd6dc;
-    --text: #f3eadb;
-    --muted: #c9bda9;
+    --bg-color: #361b0a94;
 }
 
 body {
@@ -16,15 +9,19 @@ body {
     align-items: center;
     font-size: larger;
     color: var(--text);
+    color: #f6d28b;
 }
 
 nav {
-    width: 50%;
+    width: 100%;
+    background-color: #fdc045;
+    position: sticky;
+    top: 0;
 }
 
 ul {
-    padding: 0%;
-    margin: 5px;
+    padding: 0;
+
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
@@ -32,9 +29,34 @@ ul {
     list-style: none;
 }
 
+a {
+    color: #361b0a94;
+    text-decoration-line: none;
+}
+
 h1,
 h2,
 h3 {
-    color: #f6d28b;
+    color: #fdc045;
     text-shadow: 0 0 12px rgba(255, 177, 74, 0.15);
+}
+
+header {
+    padding: 2%;
+}
+
+section {
+    margin: 2%;
+    padding: 2%;
+    background-color: #361b0a94;
+    border-radius: 5px;
+}
+
+header,
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #361b0ac4;
+    width: 100%;
 }
