@@ -18,7 +18,7 @@
         "
     >
         <audio
-            src="./src/domartistudios-magical-wizard-school-orchestral-fantasy-488126.mp3"
+            src="./src/domartistudios-magical-wizard-sc.mp3"
             type="audio/mp3"
             preload="auto"
             hidden
@@ -97,6 +97,31 @@
                 the fire, or carry rumors of hidden treasure? Send us a message
                 by raven, rune… or the form below.
             </p>
+            <audio
+                id="caw_sound"
+                src="./src/freesound_community-crow-94164.mp3"
+            ></audio>
+            <script>
+                function crow_sound() {
+                    const caw = document.getElementById("caw_sound");
+                    caw.play();
+                }
+            </script>
+            <fieldset>
+                <legend>Send a raven here:</legend>
+                <label for="message">“What vision seeks to be spoken?”</label
+                ><br />
+                <input type="text" name="message" /><br />
+                <div class="submit_btn">
+                    <input
+                        type="image"
+                        id="submit_btn"
+                        name="submit"
+                        src="./src/FHD (51).png"
+                        onclick="crow_sound()"
+                    />
+                </div>
+            </fieldset>
         </section>
         <footer>
             <h3>Footer</h3>

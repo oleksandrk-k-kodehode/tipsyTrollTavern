@@ -1,5 +1,7 @@
 :root {
-    --bg-color: #361b0a94;
+    --hover-form-color: #e9b370;
+    --active-form-color: #e6842b;
+    --form-color: #9b6536;
 }
 
 body {
@@ -41,6 +43,10 @@ h3 {
     text-shadow: 0 0 12px rgba(255, 177, 74, 0.15);
 }
 
+img {
+    border: 2px solid #fdc045;
+}
+
 header {
     padding: 2%;
 }
@@ -73,4 +79,40 @@ footer {
 
 .special_text {
     margin-right: 2%;
+}
+
+#submit_btn {
+    background-color: #f6d28b00;
+    border: 0;
+    font-size: 2em;
+    height: 10vh;
+    width: auto;
+}
+
+input {
+    background-color: #361b0ac4;
+    border: 2px solid var(--form-color);
+}
+
+fieldset {
+    border: 2px solid var(--form-color);
+}
+
+fieldset:active {
+    border: 2px solid #fd7945;
+}
+
+input:hover,
+fieldset:hover {
+    border: 2px solid var(--hover-form-color);
+}
+
+.submit_btn {
+    display: flex;
+    justify-content: center;
+}
+
+input:focus,
+fieldset:focus-within {
+    border: 2px solid #e6842b;
 }
