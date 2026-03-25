@@ -75,10 +75,13 @@ footer {
 
 .special_offer {
     display: flex;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
 .special_text {
     margin-right: 2%;
+    width: 50%;
 }
 
 #submit_btn {
@@ -89,12 +92,19 @@ footer {
     width: auto;
 }
 
-input {
+textarea {
     background-color: #361b0ac4;
     border: 2px solid var(--form-color);
 }
 
 fieldset {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+    justify-items: center;
+    justify-content: space-between;
+    width: 100%;
     border: 2px solid var(--form-color);
 }
 
@@ -102,7 +112,7 @@ fieldset:active {
     border: 2px solid #fd7945;
 }
 
-input:hover,
+textarea:hover,
 fieldset:hover {
     border: 2px solid var(--hover-form-color);
 }
@@ -112,7 +122,7 @@ fieldset:hover {
     justify-content: center;
 }
 
-input:focus-within,
+textarea:focus-within,
 fieldset:focus-within {
     border: 2px solid #e6842b;
 }
