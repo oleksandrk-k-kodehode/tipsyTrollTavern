@@ -60,3 +60,17 @@ footer {
     background-color: #361b0ac4;
     width: 100%;
 }
+
+#special_img {
+    height: 50vh;
+    width: auto;
+    margin: 2%;
+}
+
+.special_offer {
+    display: flex;
+}
+
+.special_text {
+    margin-right: 2%;
+}

@@ -17,6 +17,14 @@
             /* background-position: 45% 30%; */
         "
     >
+        <audio
+            src="./src/domartistudios-magical-wizard-school-orchestral-fantasy-488126.mp3"
+            type="audio/mp3"
+            preload="auto"
+            hidden
+            loop
+            autoplay
+        ></audio>
         <header>
             <h1>Tipsy Troll Tavern</h1>
             <p></p>
@@ -42,14 +50,29 @@
         </section>
         <section id="today_special">
             <h2>Today’s Special</h2>
-            <p>
-                Today’s Special: Dreamweaver’s Delight Our most legendary brew
-                is not for the faint of heart. Dreamweaver’s Delight shimmers
-                with a violet glow, crafted from moonlit mushrooms, stardust,
-                and a secret ingredient known only to the tavern’s cunning troll
-                keeper. One sip may fill your mind with vivid dreams, forgotten
-                memories, or visions of adventures yet to come.
-            </p>
+            <div class="special_offer">
+                <p class="special_text">
+                    <span
+                        >Today’s Special: Dreamweaver’s Delight Our most
+                        legendary brew is not for the faint of heart.</span
+                    ><br />
+                    <span
+                        >Dreamweaver’s Delight shimmers with a violet glow,
+                        crafted from moonlit mushrooms, stardust, and a secret
+                        ingredient known only to the tavern’s cunning troll
+                        keeper. </span
+                    ><br />
+                    <span>
+                        One sip may fill your mind with vivid dreams, forgotten
+                        memories, or visions of adventures yet to come. </span
+                    ><br />
+                </p>
+                <img
+                    src="./src/1426716b-137a-45c7-ba2c-a974baf9f079.png"
+                    alt="brew"
+                    id="special_img"
+                />
+            </div>
             <em
                 >Warning: May cause spontaneous bravery, poetic rambling, or
                 questionable decisions after midnight.</em
@@ -79,19 +102,6 @@
             <h3>Footer</h3>
             <strong>© Tricky Troll Tavern</strong><br />
             <em>All rights guarded by a rather suspicious troll 🧌</em><br />
-
-            <audio id="player" hidden loop>
-                <source
-                    src="./src/domartistudios-magical-wizard-school-orchestral-fantasy-488126.mp3"
-                    type="audio/mp3"
-                />
-            </audio>
-            <script>
-                function musicPlay() {
-                    document.getElementById("player").play();
-                }
-                musicPlay();
-            </script>
         </footer>
     </body>
 </html>
