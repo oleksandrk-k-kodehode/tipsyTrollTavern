@@ -112,7 +112,7 @@ fieldset:hover {
     justify-content: center;
 }
 
-input:focus,
+input:focus-within,
 fieldset:focus-within {
     border: 2px solid #e6842b;
 }
