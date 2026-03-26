@@ -100,13 +100,6 @@ textarea {
 }
 
 fieldset {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    align-content: center;
-    justify-items: center;
-    justify-content: space-between;
-    width: 100%;
     border: 2px solid var(--form-color);
 }
 
@@ -145,4 +138,14 @@ fieldset:focus-within {
 
 .toggler:focus {
     border-color: #9b4836;
+}
+
+form {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+    justify-items: center;
+    justify-content: space-between;
+    width: 100%;
 }
