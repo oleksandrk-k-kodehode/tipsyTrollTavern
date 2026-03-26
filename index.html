@@ -17,17 +17,40 @@
             /* background-position: 45% 30%; */
         "
     >
-        <audio
-            src="./src/domartistudios-magical-wizard-sc.mp3"
-            type="audio/mp3"
-            preload="auto"
-            hidden
-            loop
-            autoplay
-        ></audio>
         <header>
             <h1>Tipsy Troll Tavern</h1>
-            <p></p>
+            <br />
+            <audio
+                src="./src/domartistudios-magical-wizard-sc.mp3"
+                type="audio/mp3"
+                preload="auto"
+                id="theme"
+                hidden
+                loop
+            ></audio>
+            <p>Press me!</p>
+            <input
+                class="toggler"
+                type="image"
+                onchange="toggleMusic(event)"
+                src="./src/FHD (117).png"
+            />
+            <script>
+                let is_playing = false;
+
+                function toggleMusic(event) {
+                    const audio = document.getElementById("theme");
+                    if (!is_playing) {
+                        console.log("play");
+                        audio.play();
+                        is_playing = true;
+                    } else {
+                        console.log("pause");
+                        audio.pause();
+                        is_playing = false;
+                    }
+                }
+            </script>
         </header>
         <nav>
             <ul>
@@ -111,7 +134,7 @@
                 <legend>Send a raven here:</legend>
                 <label for="message">“What vision seeks to be spoken?”</label
                 ><br />
-                <textarea name="message"></textarea><br />
+                <textarea id="message" name="message"></textarea><br />
                 <div class="submit_btn">
                     <input
                         type="image"
@@ -125,6 +148,8 @@
         </section>
         <footer>
             <h3>Footer</h3>
+            <br />
+
             <strong>© Tricky Troll Tavern</strong><br />
             <em>All rights guarded by a rather suspicious troll 🧌</em><br />
         </footer>

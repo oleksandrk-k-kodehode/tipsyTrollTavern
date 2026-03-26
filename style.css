@@ -2,6 +2,8 @@
     --hover-form-color: #e9b370;
     --active-form-color: #e6842b;
     --form-color: #9b6536;
+    --main-color: #fdc045;
+    --text: #f6d28b;
 }
 
 body {
@@ -11,12 +13,11 @@ body {
     align-items: center;
     font-size: larger;
     color: var(--text);
-    color: #f6d28b;
 }
 
 nav {
     width: 100%;
-    background-color: #fdc045;
+    background-color: var(--main-color);
     position: sticky;
     top: 0;
 }
@@ -39,12 +40,13 @@ a {
 h1,
 h2,
 h3 {
-    color: #fdc045;
+    margin-bottom: 1%;
+    color: var(--main-color);
     text-shadow: 0 0 12px rgba(255, 177, 74, 0.15);
 }
 
 img {
-    border: 2px solid #fdc045;
+    border: 2px solid var(--main-color);
 }
 
 header {
@@ -68,7 +70,7 @@ footer {
 }
 
 #special_img {
-    height: 50vh;
+    height: 45vh;
     width: auto;
     margin: 2%;
 }
@@ -125,4 +127,22 @@ fieldset:hover {
 textarea:focus-within,
 fieldset:focus-within {
     border: 2px solid #e6842b;
+}
+
+.toggler {
+    width: 5vw;
+    background-color: inherit;
+    border-color: transparent;
+}
+
+.toggler:hover {
+    border-color: var(--hover-form-color);
+}
+
+.toggler:active {
+    border-color: var(--active-form-color);
+}
+
+.toggler:focus {
+    border-color: #ff6c4b;
 }
