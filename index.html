@@ -29,28 +29,30 @@
                 loop
             ></audio>
             <p>Press me!</p>
-            <input
-                class="toggler"
-                type="image"
-                onchange="toggleMusic(event)"
-                src="./src/FHD (117).png"
-            />
+
             <script>
                 let is_playing = false;
-
-                function toggleMusic(event) {
+                function toggleMusic() {
                     const audio = document.getElementById("theme");
                     if (!is_playing) {
                         console.log("play");
                         audio.play();
                         is_playing = true;
+                        console.log(is_playing);
                     } else {
                         console.log("pause");
                         audio.pause();
                         is_playing = false;
+                        console.log(is_playing);
                     }
                 }
             </script>
+            <input
+                class="toggler"
+                type="image"
+                src="./src/FHD (117).png"
+                onclick="toggleMusic()"
+            />
         </header>
         <nav>
             <ul>
@@ -147,8 +149,7 @@
             </fieldset>
         </section>
         <footer>
-            <h3>Footer</h3>
-            <br />
+            <h3>Troll footer</h3>
 
             <strong>© Tricky Troll Tavern</strong><br />
             <em>All rights guarded by a rather suspicious troll 🧌</em><br />
