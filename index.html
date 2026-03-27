@@ -126,33 +126,43 @@
                 id="caw_sound"
                 src="./src/freesound_community-crow-94164.mp3"
             ></audio>
+
+            <form id="my_form">
+                <fieldset>
+                    <legend>Send a raven here:</legend>
+                    <label for="message"
+                        >“What vision seeks to be spoken?”</label
+                    ><br />
+                    <textarea id="message" name="message"></textarea><br />
+                    <div class="submit_btn">
+                        <input
+                            type="image"
+                            id="submit_btn"
+                            name="submit"
+                            src="./src/FHD (51).png"
+                            onclick="crow_sound()"
+                        />
+                    </div>
+                </fieldset>
+            </form>
             <script>
-                function crow_sound() {
-                    const caw = document.getElementById("caw_sound");
+                const form = document.getElementById("my_form");
+                const caw = document.getElementById("caw_sound");
+                form.addEventListener("submit", function (e) {
+                    e.preventDefault();
                     caw.play();
-                }
+                    caw.onended = () => {
+                        form.submit();
+                    };
+                });
             </script>
-            <fieldset>
-                <legend>Send a raven here:</legend>
-                <label for="message">“What vision seeks to be spoken?”</label
-                ><br />
-                <textarea id="message" name="message"></textarea><br />
-                <div class="submit_btn">
-                    <input
-                        type="image"
-                        id="submit_btn"
-                        name="submit"
-                        src="./src/FHD (51).png"
-                        onclick="crow_sound()"
-                    />
-                </div>
-            </fieldset>
         </section>
         <footer>
             <h3>Troll footer</h3>
 
             <strong>© Tricky Troll Tavern</strong><br />
-            <em>All rights guarded by a rather suspicious troll 🧌</em><br />
+            <p><em>All rights guarded by a rather suspicious troll</em> 🧌</p>
+            <br />
         </footer>
     </body>
 </html>

@@ -97,6 +97,9 @@ footer {
 textarea {
     background-color: #361b0ac4;
     border: 2px solid var(--form-color);
+    min-width: fit-content;
+    min-height: fit-content;
+    max-height: 300px;
 }
 
 fieldset {
@@ -143,9 +146,6 @@ fieldset:focus-within {
 form {
     display: flex;
     flex-direction: row;
-    align-items: center;
-    align-content: center;
-    justify-items: center;
-    justify-content: space-between;
+    justify-content: center;
     width: 100%;
 }
