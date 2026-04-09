@@ -144,7 +144,6 @@
                                 id="submit_btn"
                                 name="submit"
                                 src="./src/FHD (51).png"
-                                onclick="crow_sound()"
                             />
                         </div>
                     </fieldset>
@@ -152,12 +151,14 @@
                 <script>
                     const form = document.getElementById("my_form");
                     const caw = document.getElementById("caw_sound");
+                    const message = document.getElementById("message");
                     form.addEventListener("submit", function (e) {
                         e.preventDefault();
                         caw.play();
                         caw.onended = () => {
                             form.submit();
                         };
+                        message.value = "";
                     });
                 </script>
             </section>
